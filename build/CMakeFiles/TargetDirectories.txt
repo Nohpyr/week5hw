@@ -1,0 +1,3 @@
+/home/option16/Documents/CV2016/Week5/week5hw/build/CMakeFiles/edit_cache.dir
+/home/option16/Documents/CV2016/Week5/week5hw/build/CMakeFiles/rebuild_cache.dir
+/home/option16/Documents/CV2016/Week5/week5hw/build/CMakeFiles/threshy.dir

@@ -32,11 +32,18 @@ int main()
 	imshow("Thresh", result);
 	waitKey(0);
 	
+	//canny
+	Mat cann;
+	Canny(img, cann, 100, 200);
+	imshow("Cannied", cann);
+	waitKey(0);
 	//contours
-	/*Mat cann;
 	vector<vector<Point> > contours;
-	vector<Vec4i> hierarchy;
-	Canny(fileLoc, cann, 1, 10, 3);
 	findContours(cann, contours, CV_RETR_LIST, CV_CHAIN_APPROX_SIMPLE, Point(0, 0) );
-	*/
+	Mat draw = Mat::zeros(img.rows, img.cols, CV_8UC3);
+	Scalar col = Scalar(255,255,255);
+	drawContours(draw,contours, -1, col);
+	imshow("Cont", draw);
+	waitKey(0);
+	
 }
